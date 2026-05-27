@@ -3,7 +3,7 @@
 |
 |   Translators:.....: 2014–yyyy – Rusi Dimitrov;
 |                      2007–2012 – Milen Metev (Tragedy);
-|   Last revision:...: 17.05.2026 by Rusi Dimitrov <npp[at]rdd.anonaddy.com>
+|   Last revision:...: 27.05.2026 by Rusi Dimitrov <npp[at]rdd.anonaddy.com>
 |
 \========================================================================== -->
 <NotepadPlus>
@@ -102,6 +102,7 @@
 					<!-- Подменю "Местоположение на файла" -->
 					<Item id="41019" name="Отваряне на папката"/>
 					<Item id="41020" name="Отваряне в cmd конзола"/>
+					<Item id="41027" name="Отваряне в PowerShell"/>
 					<Item id="41025" name="Директория като работно място"/>
 					<!-- Меню "Файл" -->
 					<Item id="41023" name="Отваряне по подразбиране"/>
@@ -513,6 +514,7 @@
 				<!-- Подменю "Отваряне на" -->
 				<Item CMDID="41019" name="Отваряне папката на файла"/>
 				<Item CMDID="41020" name="Отваряне папката на файла в cmd"/>
+				<Item CMDID="41027" name="Отваряне папката на файла в PowerShell"/>
 				<Item CMDID="41025" name="Отваряне на директорията като работно място"/>
 				<Item CMDID="41023" name="Отваряне по подразбиране"/>
 				<!-- Контекстно меню на раздел -->
@@ -1383,6 +1385,8 @@
 					<!-- Подменю "Местоположение на файла" -->
 					<Item id="41019" name="Местоположение на файла – Отваряне на папката"/>
 					<Item id="41020" name="Местоположение на файла – Отваряне в cmd конзола"/>
+					<Item id="41027" name="Местоположение на файла – Отваряне в PowerShell"/>
+					<Item id="41025" name="Местоположение на файла – Директория като работно място"/>
 					<!-- Подменю "Последно използвани" -->
 					<Item id="41021" name="Отваряне на последно затворен файл"/>
 					<!-- Меню "Редактиране" -->
@@ -1677,6 +1681,7 @@
 				<Item id="3518" name="Отваряне папката до тук"/>
 				<Item id="3519" name="Отваряне папката в cmd"/>
 				<Item id="3520" name="Копиране името на файла"/>
+				<Item id="3521" name="Отваряне папката в PowerShell"/>
 			</Menu>
 		</FolderAsWorkspace>
 		<MiscStrings>
@@ -2102,6 +2107,22 @@ C, C++, Java, C#, Objective-C, PHP, JavaScript, JSP, CSS, Perl, Rust, PowerShell
 			<ReadOnlyFileCannotBeSaved title="Неуспешен запис - файлът е само за четене" message="&quot;$STR_REPLACE$&quot;
 Файлът е само за четене и не може да бъде записан.
 премахнете атрибута &quot;само за четене&quot;, след което запишете файла си."/>
+			<RunSecurityNotSafeURL title="Изпълнение – Предупреждение за сигурността" message="Тази команда е URL адрес с незащитен протокол (http):
+&quot;$STR_REPLACE$&quot;
+Това може да означава грешна конфигурация или подправяне.
+
+Продължаване въпреки това?"/>
+			<RunSecurityCmdNotFound title="Изпълнение – Грешка в сигурността" message="Командата не е намерена или пътят е твърде дълъг:
+&quot;$STR_REPLACE$&quot;"/>
+			<RunSecurityOnlyAbsolutePathAllowed title="Изпълнение – Грешка в сигурността" message="Разрешени са само абсолютни пътища:
+&quot;$STR_REPLACE$&quot; е невалидна команда."/>
+			<RunSecurityFileNoExist title="Изпълнение – Грешка в сигурността" message="Файлът не съществува:
+&quot;$STR_REPLACE$&quot;"/>
+			<RunSecurityNoTrustedLocation title="Изпълнение – Предупреждение за сигурността" message="Тази команда ще стартира изпълним файл от недоверено местоположение:
+&quot;$STR_REPLACE$&quot;
+Това може да означава грешна конфигурация или подправяне.
+
+Продължаване въпреки това?"/>
 		</MessageBox>
 	</Native-Langue>
 </NotepadPlus>
